@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}  
+body{
+    background:linear-gradient(#200018,#150029);
+    height: 100vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: rgb(248, 245, 241);
+}
+header{
+    position: absolute;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px ;
+    z-index: 1; 
+}
+header .logo{
+    font-size: 25px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 2px rgb(75, 75, 75);
+
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    margin-right: 20px;
+}
+header ul li a{
+    padding: 5px 7px;    
+    border-radius: 20px;
+}
+
+
+header ul li a:hover,#me{
+    background-color: rgba(250, 235, 215, 0.838);
+    color: rgb(82, 18, 1);
+}
+.main{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.main::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    background:linear-gradient(to top,#200018,transparent);
+}
+.main img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+#moon{
+    mix-blend-mode: screen;
+    transform: translateY(20px);
+}
+.word_back_moon{
+    color: #ffff;
+    font-size:14px;
+    text-transform: uppercase;
+    transform: translateY(-140px);
+}
+.logo:hover{
+    background-color: beige;
+    color: rgb(55, 108, 109);
+    border-radius: 15px;
+}
+img{
+    padding-top: 50px;
+}
+.content{
+    color: aliceblue;
+    padding: 30px;
+}
+.content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+
+.content p{
+    margin: 20px;
+}
